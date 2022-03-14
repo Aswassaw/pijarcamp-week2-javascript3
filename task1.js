@@ -21,7 +21,7 @@ cekHariKerja("rAbu")
     console.log(result);
   })
   .catch((error) => {
-    console.error(error.message);
+    console.log(error.message);
   });
 
 // async-await
@@ -29,7 +29,7 @@ const cekHariKerjaAsync = async (day) => {
   try {
     console.log(await cekHariKerja(day));
   } catch (error) {
-    console.error(error.message);
+    console.log(error.message);
   }
 };
 cekHariKerjaAsync("minggu");

@@ -16,13 +16,16 @@ const cekHariKerja = (day) => {
 };
 
 // then-catch
-cekHariKerja("rabu")
+cekHariKerja("sabtu")
   .then((result) => console.log(result))
   .catch((error) => console.log(error.message));
 
-// try-catch
-try {
-  console.log(await cekHariKerja(day));
-} catch (error) {
-  console.log(error.message);
-}
+// try catch
+const cekHariKerjaAsync = async (day) => {
+  try {
+    console.log(await cekHariKerja(day));
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+cekHariKerjaAsync("selasa");

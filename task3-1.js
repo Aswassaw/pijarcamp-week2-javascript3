@@ -1,4 +1,3 @@
-// 1. Fungsi untuk mengecek bilangan prima
 const cekBilanganPrima = (number) => {
   return new Promise((resolve, reject) => {
     if (typeof number === "number") {
@@ -17,17 +16,13 @@ const cekBilanganPrima = (number) => {
         } else {
           resolve("Bilangan tersebut adalah prima!");
         }
-      }, 0);
+      }, 3000);
     } else {
       reject(new Error("Parameter yang dimasukkan bukanlah number."));
     }
   });
 };
 
-cekBilanganPrima(11)
-  .then((result) => {
-    console.log(result);
-  })
-  .catch(({ message }) => {
-    console.log(message);
-  });
+cekBilanganPrima(100)
+  .then((result) => console.log(result))
+  .catch(({ message }) => console.log(message));

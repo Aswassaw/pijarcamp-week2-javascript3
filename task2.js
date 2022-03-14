@@ -1,7 +1,7 @@
 const getMonth = (callback) => {
   setTimeout(() => {
     let error = false;
-    let month = [
+    let months = [
       "Januari",
       "Februari",
       "Maret",
@@ -17,20 +17,18 @@ const getMonth = (callback) => {
     ];
 
     if (!error) {
-      callback(null, month);
+      callback(null, months);
     } else {
       callback(new Error("Sorry Data Not Found"), []);
     }
   }, 4000);
 };
 
-const showAllMonth = (error, allMonth) => {
+const showAllMonth = (error, months) => {
   if (error) {
     console.log(error.message);
   } else {
-    allMonth.map((month) => {
-      console.log(month);
-    });
+    months.map((month) => console.log(month));
   }
 };
 

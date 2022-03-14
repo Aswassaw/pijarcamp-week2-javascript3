@@ -21,11 +21,11 @@ cekHariKerja("sabtu")
   .catch((error) => console.log(error.message));
 
 // try catch
-const cekHariKerjaAsync = async (day) => {
+const cekHari = async (day) => {
   try {
     console.log(await cekHariKerja(day));
   } catch (error) {
     console.log(error.message);
   }
 };
-cekHariKerjaAsync("selasa");
+cekHari("selasa");

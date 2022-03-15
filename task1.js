@@ -17,11 +17,15 @@ const cekHariKerja = (day) => {
 
 // then-catch
 cekHariKerja("sabtu")
+  // Kode then di bawah akan berjalan ketika promise mengembalikan resolve
   .then((result) => console.log(result))
+  // Kode catch di bawah akan berjalan ketika promise mengembalikan reject
   .catch((error) => console.log(error.message));
 
-// try catch
+// try-catch
 const cekHari = async (day) => {
+  // Kode try di bawah akan menguji apakah promise yang berada di dalam bloknya mengembalikan resolve atau reject.
+  // Jika promise mengembalikan reject maka semua kode di dalam try akan diskip, dan catch akan berjalan.
   try {
     console.log(await cekHariKerja(day));
   } catch (error) {

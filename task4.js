@@ -8,5 +8,5 @@ const getDataFromAPI = async (cb) => {
 };
 
 getDataFromAPI((data) => {
-  data.map((item, index) => console.log(`${index + 1} - ${item.name}`));
+  data.map((item) => console.log(item.name));
 });

@@ -25,7 +25,8 @@ cekHariKerja("sabtu")
 // try-catch
 const cekHari = async (day) => {
   // Kode try di bawah akan menguji apakah promise yang berada di dalam bloknya mengembalikan resolve atau reject.
-  // Jika promise mengembalikan reject maka semua kode di dalam try akan diskip, dan catch akan berjalan.
+  // Jika promise mereturn resolve, maka catch tidak akan dijalankan.
+  // Jika promise mereturn reject maka semua kode di dalam try akan diskip, dan catch akan berjalan.
   try {
     console.log(await cekHariKerja(day));
   } catch (error) {

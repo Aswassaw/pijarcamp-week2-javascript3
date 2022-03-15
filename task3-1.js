@@ -10,11 +10,10 @@ const cekBilanganPrima = (number) => {
           }
         }
 
-        console.log(jumlahDibagi);
-        if (jumlahDibagi > 2) {
-          reject(new Error("Bukan prima!"));
-        } else {
+        if (jumlahDibagi === 2) {
           resolve("Bilangan tersebut adalah prima!");
+        } else {
+          reject(new Error("Bukan prima!"));
         }
       }, 3000);
     } else {
@@ -23,6 +22,6 @@ const cekBilanganPrima = (number) => {
   });
 };
 
-cekBilanganPrima(100)
+cekBilanganPrima(0)
   .then((result) => console.log(result))
   .catch(({ message }) => console.log(message));

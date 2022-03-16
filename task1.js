@@ -16,7 +16,7 @@ const cekHariKerja = (day) => {
 };
 
 // then-catch
-cekHariKerja("sabtu")
+cekHariKerja("senin")
   // Kode then di bawah akan berjalan ketika promise mengembalikan resolve
   .then((result) => console.log(result))
   // Kode catch di bawah akan berjalan ketika promise mengembalikan reject
@@ -33,4 +33,4 @@ const cekHari = async (day) => {
     console.log(error.message);
   }
 };
-cekHari("selasa");
+cekHari("minggu");

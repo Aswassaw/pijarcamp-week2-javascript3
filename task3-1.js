@@ -4,6 +4,8 @@ const cekBilanganPrima = (number) => {
       setTimeout(() => {
         let jumlahDibagi = 0;
 
+        // number = 3
+        // i = 1
         for (let i = 1; i <= number; i++) {
           if (number % i === 0) {
             jumlahDibagi++;
@@ -22,6 +24,6 @@ const cekBilanganPrima = (number) => {
   });
 };
 
-cekBilanganPrima(0)
+cekBilanganPrima(5)
   .then((result) => console.log(result))
   .catch(({ message }) => console.log(message));

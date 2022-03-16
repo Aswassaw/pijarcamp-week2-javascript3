@@ -1,10 +1,14 @@
 const fetch = require("node-fetch");
 
 const getDataFromAPI = async (cb) => {
-  const result = await fetch("https://jsonplaceholder.typicode.com/users");
-  const data = await result.json();
+  try {
+    const result = await fetch("https://jsonplaceholder.typicode.com/users");
+    const data = await result.json();
 
-  cb(data);
+    cb(data);
+  } catch (error) {
+    console.log(error.message);
+  }
 };
 
 getDataFromAPI((data) => {

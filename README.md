@@ -4,7 +4,7 @@ Tugas Bootcamp Pijar Camp Minggu Kedua Materi Javascript 3.
 
 ## Soal
 
-1.Buatlah sambungan program menggunakan then catch dan juga try catch untuk mengecek hari kerja dari kode Asynchronous dibawah dan jelaskan penggunaan then catch dan try catch dengan memberikan komentar di bawahnya:
+1. Buatlah sambungan program menggunakan then catch dan juga try catch untuk mengecek hari kerja dari kode Asynchronous dibawah dan jelaskan penggunaan then catch dan try catch dengan memberikan komentar di bawahnya:
 
 ```javascript
 const cekHariKerja = (day) => {
@@ -28,7 +28,7 @@ const cekHariKerja = (day) => {
 
 ---
 
-2.Buat program menggunakan callback function untuk melanjutkan dan menampilkan semua bulan menggunakan method map.
+2. Buat program menggunakan callback function untuk melanjutkan dan menampilkan semua bulan menggunakan method map.
 
 ```javascript
 const getMonth = (callback) => {
@@ -60,9 +60,9 @@ const getMonth = (callback) => {
 
 ---
 
-3.Buatlah 2 program bebas dengan menggunakan promise seperti soal nomor 1.
+3. Buatlah 2 program bebas dengan menggunakan promise seperti soal nomor 1.
 
 ---
 
-4.Buatlah program menggunakan method fetch untuk menampilkan semua name (hanya name nya saja) dari REST API dibawah ini
+4. Buatlah program menggunakan method fetch untuk menampilkan semua name (hanya name nya saja) dari REST API dibawah ini
 https://jsonplaceholder.typicode.com/users
